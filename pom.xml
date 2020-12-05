@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.4.2</version>
+            <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -33,11 +33,10 @@
                     <failIfNoTests>true</failIfNoTests>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.5</version>
+                <version>0.8.6</version>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
@@ -55,6 +54,7 @@
                     </execution>
                     <execution>
                         <id>check</id>
+                        <phase>verify</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>
@@ -64,7 +64,8 @@
                                     <element>CLASS</element>
                                     <excludes>
                                         <exclude>*Test</exclude>
-                                        <exclude>Conditioner</exclude>
+                                        <exclude>Movie</exclude>
+                                        <exclude>MainPageManager</exclude>
                                     </excludes>
                                     <limits>
                                         <limit>
@@ -80,5 +81,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
