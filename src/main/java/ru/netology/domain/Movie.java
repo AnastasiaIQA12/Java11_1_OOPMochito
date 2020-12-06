@@ -1,23 +1,28 @@
 package ru.netology.domain;
 
 public class Movie {
-    private String id;
+    private int id;
     private String imageUrl;
     private String name;
     private String genre;
 
-    public Movie(String id, String imageUrl, String name, String genre) {
+
+    public Movie() {
+    }
+
+    public Movie(int id, String imageUrl, String name, String genre) {
         this.id = id;
         this.imageUrl = imageUrl;
         this.name = name;
         this.genre = genre;
     }
 
-    public String getId() {
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
