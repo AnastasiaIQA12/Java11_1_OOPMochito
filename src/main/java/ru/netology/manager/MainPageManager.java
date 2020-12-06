@@ -8,12 +8,12 @@ public class MainPageManager {
     /**
      * Main Page generation
      */
-    //public String generate() {
-        //Movie[] movies = movieManager.getMoviesForFeed();
-        // TODO: add logic
-        //for (Movie movie : movies) {
-            //String block = movie.getGenre();
-        //}
-        //return null;
-    //}
+    public String generate() {
+        Movie[] movies = movieManager.getMoviesForFeed();
+        //TODO: add logic
+        for (Movie movie : movies) {
+            String block = movie.getGenre();
+        }
+        return null;
+    }
 }

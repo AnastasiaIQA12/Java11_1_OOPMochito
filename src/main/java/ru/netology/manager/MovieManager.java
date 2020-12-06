@@ -13,6 +13,11 @@ public class MovieManager {
         this.countOutMovies = countOutMovies;
     }
 
+    public Movie[] getMoviesForFeed() {
+        // TODO: add logic
+        return null;
+    }
+
     public void add(Movie movie) {
         // создаём новый массив размером на единицу больше, чем Movie[]
         int length = movies.length + 1;
