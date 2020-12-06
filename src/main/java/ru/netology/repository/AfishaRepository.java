@@ -21,10 +21,10 @@ public class AfishaRepository {
     }
 
     public Movie[] findById(int id) {
-        Movie[] tmp = new Movie[1];
+        Movie[] tmp=new Movie[]{};
         for (Movie movie : movies) {
             if (movie.getId() == id) {
-                tmp[0] = movie;
+                tmp = new Movie[]{movie};
             }
         }
         movies=tmp;

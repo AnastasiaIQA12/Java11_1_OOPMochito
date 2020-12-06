@@ -50,6 +50,14 @@ public class AfishaRepositoryTest {
     }
 
     @Test
+    void shouldFindByIdNull() {
+        int idToFind=13;
+        Movie[] actual = repository.findById(idToFind);
+        Movie[] expected = new Movie[]{};
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
     void shouldRemoveById() {
         int idToRemove=5;
         repository.removeById(idToRemove);
