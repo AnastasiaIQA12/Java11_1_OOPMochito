@@ -7,13 +7,17 @@ public class AfishaManager {
     private AfishaRepository repository;
     private int countOutMovies = 10;
 
-
     public AfishaManager(AfishaRepository repository, int countOutMovies) {
         this.repository = repository;
         this.countOutMovies = countOutMovies;
     }
 
     public AfishaManager() {
+    }
+
+    public Movie[] getMoviesForFeed() {
+        // TODO: add logic
+        return null;
     }
 
     public void add(Movie movie) {
